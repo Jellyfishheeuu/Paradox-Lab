@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore | Paradox Lab</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='40' cy='40' r='20' stroke='%23ff4336' stroke-width='3' fill='none'/><line x1='60' y1='60' x2='80' y2='80' stroke='%23ff4336' stroke-width='3'/></svg>">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="explore.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo-container">
+    <img src="Logo.png" alt="Paradox Lab Logo" class="logo-img">
+    <div class="logo">PARADOX</div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active">Explore</a>
+    <a href="activities.html">Activities</a>
+    <a href="community.html">Community</a>
+    <a href="join.html">Join</a>
+  </nav>
+</header>
+
+<section class="explore-header">
+  <div class="tag">CASE FILES</div>
+  <h1>Explore Investigations</h1>
+  <p>Browse active and solved cases</p>
+</section>
+
+<!-- GRID LAYOUT -->
+<section class="explore-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+  <h3 class="filter-title">
+    <i data-lucide="filter"></i>
+    Filters
+  </h3>
+
+  <div class="search-box">
+    <i data-lucide="search"></i>
+    <input type="text" id="searchInput" placeholder="Search cases...">
+  </div>
+
+  <div class="category-group">
+
+    <button class="cat active" data-cat="all">
+      <i data-lucide="layers"></i>
+      All Cases
+    </button>
+
+    <button class="cat" data-cat="historical">
+      <i data-lucide="scroll"></i>
+      Historical
+    </button>
+
+    <button class="cat" data-cat="scientific">
+      <i data-lucide="flask-conical"></i>
+      Scientific
+    </button>
+
+    <button class="cat" data-cat="philosophical">
+      <i data-lucide="brain"></i>
+      Philosophical
+    </button>
+
+    <button class="cat" data-cat="math">
+      <i data-lucide="sigma"></i>
+      Mathematical
+    </button>
+
+  </div>
+
+</aside>
+
+  <!-- CASES -->
+  <div class="cases" id="caseGrid">
+
+    <div class="case-card" data-cat="historical">
+      <span class="badge active">Active</span>
+      <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570">
+      <div class="case-content">
+        <small>Historical • Advanced</small>
+        <h3>Voynich Manuscript</h3>
+        <p>Unknown language manuscript.</p>
+
+        <a href="cases/voynich.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="scientific">
+      <span class="badge active">Active</span>
+      <img src="https://i.pinimg.com/736x/2f/cd/39/2fcd39238ca44ee2d72431f87b80d1b1.jpg">
+      <div class="case-content">
+        <small>Scientific • Intermediate</small>
+        <h3>Fermi Paradox</h3>
+        <p>Where is everyone?</p>
+
+        <a href="cases/fermi.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="philosophical">
+      <span class="badge solved">Solved</span>
+      <img src="https://i.pinimg.com/736x/8e/d0/66/8ed066ac29fa3b664944c95436d913ea.jpg">
+      <div class="case-content">
+        <small>Philosophy • Beginner</small>
+        <h3>Ship of Theseus</h3>
+        <p>Identity paradox.</p>
+
+        <a href="cases/theseus.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="historical">
+      <span class="badge active">Active</span>
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <div class="case-content">
+        <small>Historical • Advanced</small>
+        <h3>Antikythera Mechanism</h3>
+        <p>Ancient astronomical computer.</p>
+
+        <a href="cases/antikythera.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="scientific">
+      <span class="badge active">Active</span>
+      <img src="https://i.pinimg.com/736x/74/20/fd/7420fdfa43795c90e707e23e574a05c9.jpg">
+      <div class="case-content">
+        <small>Scientific • Advanced</small>
+        <h3>Dark Matter Signal</h3>
+        <p>Unexplained energy pulses in space.</p>
+
+        <a href="cases/dark-matter.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="math">
+      <span class="badge solved">Solved</span>
+      <img src="https://i.pinimg.com/736x/74/1f/32/741f32d1241a00a0561a6613604bd3bc.jpg">
+      <div class="case-content">
+        <small>Mathematical • Advanced</small>
+        <h3>Riemann Hypothesis</h3>
+        <p>A proof attempt for prime distribution.</p>
+
+        <a href="cases/riemann.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="philosophical">
+      <span class="badge active">Active</span>
+      <img src="https://i.pinimg.com/1200x/e4/5b/aa/e45baaa7354469995d6da3a6c6a15e88.jpg">
+      <div class="case-content">
+        <small>Philosophy • Intermediate</small>
+        <h3>Trolley Problem</h3>
+        <p>Ethics under impossible choices.</p>
+
+        <a href="cases/trolley.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="scientific">
+      <span class="badge solved">Solved</span>
+      <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06">
+      <div class="case-content">
+        <small>Scientific • Intermediate</small>
+        <h3>Quantum Entanglement</h3>
+        <p>Instant connections across distance.</p>
+
+        <a href="cases/entanglement.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="math">
+      <span class="badge active">Active</span>
+      <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb">
+      <div class="case-content">
+        <small>Mathematical • Advanced</small>
+        <h3>Gödel's Incompleteness</h3>
+        <p>Limits of formal systems.</p>
+
+        <a href="cases/godel.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="historical">
+      <span class="badge solved">Solved</span>
+      <img src="https://i.pinimg.com/1200x/96/2b/5d/962b5dea08d9ade08d342e9473a02550.jpg">
+      <div class="case-content">
+        <small>Historical • Intermediate</small>
+        <h3>Bermuda Triangle</h3>
+        <p>Vanishing ships and planes.</p>
+
+        <a href="cases/bermuda.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="scientific">
+      <span class="badge active">Active</span>
+      <img src="https://i.pinimg.com/1200x/bc/7c/01/bc7c0169315fbf3f41e39eb7291dde4f.jpg">
+      <div class="case-content">
+        <small>Scientific • Advanced</small>
+        <h3>CRISPR Mutation</h3>
+        <p>Gene editing with unknown results.</p>
+
+        <a href="cases/crispr.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+    <div class="case-card" data-cat="philosophical">
+      <span class="badge active">Active</span>
+      <img src="https://i.pinimg.com/736x/8b/86/4b/8b864bdc746da858ebe156648140eefa.jpg">
+      <div class="case-content">
+        <small>Philosophy • Advanced</small>
+        <h3>Simulation Argument</h3>
+        <p>Are we in a created reality?</p>
+
+        <a href="cases/simulation.html" class="case-btn">Explore Case →</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+
+    <div>
+      <h3>PARADOX LAB</h3>
+      <p>Unraveling mysteries through collaborative investigation</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a><br>
+      <a href="about.html">About</a><br>
+      <a href="explore.html">Explore</a><br>
+    </div>
+
+    <div>
+      <h4>Connect</h4>
+      <a href="community.html">Community</a><br>
+      <a href="activities.html">Activities</a><br>
+      <a href="join.html">Join Us</a><br>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Paradox Lab. All rights reserved.
+  </div>
+</footer>
+
+<script src="explore.js"></script>
+</body>
+</html>

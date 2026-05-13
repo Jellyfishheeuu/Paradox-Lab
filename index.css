@@ -1,0 +1,274 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+}
+
+.logo {
+  font-weight: 800;
+}
+
+.navbar a {
+  color: #888;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #ff2a00;
+}
+
+.navbar a.active {
+  color: #ff2a00;
+  position: relative;
+}
+
+.navbar a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #ff2a00;
+  border-radius: 2px;
+}
+.navbar a::after {
+  transition: 0.2s ease;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url("https://i.pinimg.com/736x/d0/6f/28/d06f28dd6025980eb44e30652d2380c3.jpg") center/cover;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tag {
+  display: inline-block;
+  border: 1px solid #ff2a00;
+  color: #ff2a00;
+  padding: 6px 14px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.hero p {
+  color: #aaa;
+  margin: 10px 0 30px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: #ff2a00;
+  color: #fff;
+}
+
+.primary:hover {
+  background: #e62200;
+  box-shadow: 0 8px 24px rgba(255, 42, 0, 0.3);
+}
+
+.outline {
+  border: 1px solid #ff2a00;
+  background: transparent;
+  color: #ff2a00;
+}
+
+.outline:hover {
+  background: rgba(255, 42, 0, 0.1);
+  border-color: #ff2a00;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  padding: 0 80px 30px;
+}
+
+.section-header h2 {
+  font-size: clamp(28px, 2.2vw, 40px);
+}
+
+.section-header p {
+  font-size: clamp(16px, 1.2vw, 20px);
+  color: #aaa;
+}
+
+/* CARDS */
+.cards {
+  width: 88%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.card {
+  background: #0d0d0d;
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  overflow: hidden;
+}
+
+/* IMAGE */
+.card-img {
+  width: calc(100% + 44px);
+  margin-left: -22px;
+  margin-top: -22px;
+  margin-bottom: 16px;
+
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.card-label {
+  font-size: clamp(13px, 1vw, 16px);
+  color: #ff2a00;
+}
+
+.card h3 {
+  font-size: clamp(22px, 1.8vw, 30px);
+  font-weight: 600;
+}
+
+.card p,
+.card li {
+  font-size: clamp(14px, 1.2vw, 12px);
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card-meta {
+  margin-top: auto;
+  font-size: clamp(14px, 1vw, 18px);
+  color: #666;
+}
+
+/* FOOTER */
+footer {
+  background: #0d0d0d;
+  padding: 40px 60px 20px;
+  border-top: 1px solid #111;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.footer-container h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-container h4 {
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.footer-container a {
+  font-size: 12px;
+  color: #888;
+  margin: 4px 0;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 65px;
+  margin-bottom: 55px;
+
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
