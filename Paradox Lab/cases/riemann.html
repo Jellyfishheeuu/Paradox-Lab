@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Riemann Hypothesis | Paradox Lab - Cases</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../cases.css">
+</head>
+<body data-case-id="riemann">
+
+<header class="navbar">
+  <div class="logo-container">
+    <img src="../Logo.png" alt="Paradox Lab Logo" class="logo-img">
+    <div class="logo">PARADOX</div>
+  </div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../explore.html">Explore</a>
+    <a href="../activities.html">Activities</a>
+    <a href="../community.html">Community</a>
+    <a href="../join.html">Join</a>
+  </nav>
+</header>
+
+<div class="case-container">
+  <div class="case-header">
+    <h1>The Riemann Hypothesis</h1>
+    <p>One of the most famous unsolved problems in mathematics—the distribution of prime numbers.</p>
+  </div>
+
+  <!-- VIDEO TRAILER -->
+  <div class="case-video" style="margin: 40px 40px 0;">
+    <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #ff4336; padding: 12px 16px; border-bottom: 1px solid rgba(255, 67, 54, 0.2); background: rgba(10, 10, 10, 0.5);">📹 CASE TRAILER</div>
+    <div class="video-container">
+      <iframe title="The Riemann Hypothesis case trailer" src="https://www.youtube.com/embed/sD0NjbwqlYw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <div class="case-content">
+    <!-- MAIN CONTENT -->
+    <div>
+      <!-- AUDIO NARRATOR -->
+      <div class="case-audio">
+        <span class="audio-label">🎧 AUDIO NARRATION</span>
+        <audio class="audio-player" controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- CASE TEXT -->
+      <div class="case-text">
+        <p>
+          The Riemann Hypothesis, proposed by Bernhard Riemann in 1859, is one of the most famous unsolved problems in mathematics. 
+          It concerns the distribution of prime numbers and the zeros of the Riemann zeta function.
+        </p>
+
+        <p>
+          Prime numbers are the building blocks of arithmetic—numbers greater than 1 that have no positive divisors other than 1 and themselves. 
+          The distribution of primes has fascinated mathematicians for centuries, and Riemann's hypothesis provides a key insight into their behavior.
+        </p>
+
+        <p>
+          <strong>The Zeta Function:</strong>
+        </p>
+
+        <p>
+          The Riemann zeta function ζ(s) is defined for complex numbers s as the sum of 1/n^s for all positive integers n. 
+          Riemann discovered that the function has "trivial" zeros at negative even integers, and possibly "non-trivial" zeros elsewhere.
+        </p>
+
+        <p>
+          <strong>The Hypothesis:</strong>
+        </p>
+
+        <p>
+          Riemann hypothesized that all non-trivial zeros of the zeta function lie on the "critical line" where the real part of s is 1/2. 
+          This seemingly simple statement has profound implications for number theory and has resisted proof for over 150 years.
+        </p>
+
+        <p>
+          <strong>Why It Matters:</strong>
+        </p>
+
+        <p>
+          If the Riemann Hypothesis is true, it would provide deep insights into the distribution of prime numbers. 
+          It would also have implications for cryptography, quantum physics, and our understanding of the fundamental nature of numbers.
+        </p>
+
+        <p>
+          <strong>Attempts at Proof:</strong>
+        </p>
+
+        <p>
+          Mathematicians have made significant progress, proving the hypothesis for a large percentage of zeros, but a complete proof remains elusive. 
+          The problem is one of the Clay Mathematics Institute's Millennium Prize Problems, with a $1 million reward for its solution.
+        </p>
+
+        <p>
+          The Riemann Hypothesis represents the frontier of mathematical knowledge. Solving it would not only answer a centuries-old question 
+          but also open new avenues of mathematical exploration. It reminds us that even in the realm of pure abstraction, mysteries persist.
+        </p>
+
+        <p>
+          Your investigation delves into the heart of number theory. Will the hypothesis be proven, or does it represent an eternal truth 
+          beyond our grasp? <strong>What secrets does the zeta function hold?</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="case-sidebar">
+      <!-- HIGHLIGHTS PANEL -->
+      <div class="highlights-panel">
+        <div class="panel-header">
+          ⭐ HIGHLIGHTS
+          <button class="clear-highlights-btn" id="clearHighlightsBtn">Clear</button>
+        </div>
+        <div class="highlights-list" id="highlightsList">
+          <div class="empty-highlights">Select text to highlight</div>
+        </div>
+      </div>
+
+      <!-- STICKY NOTES PANEL -->
+      <div class="notes-panel">
+        <div class="panel-header">📝 NOTES</div>
+        <div class="notes-list" id="notesList">
+          <div class="empty-notes">💭 No notes yet. Create one below!</div>
+        </div>
+        <div class="add-note-form">
+          <div class="note-color-picker">
+            <button class="color-btn yellow active" data-color="yellow" title="Yellow note"></button>
+            <button class="color-btn blue" data-color="blue" title="Blue note"></button>
+            <button class="color-btn green" data-color="green" title="Green note"></button>
+            <button class="color-btn pink" data-color="pink" title="Pink note"></button>
+          </div>
+        </div>
+        <div style="padding: 12px;">
+          <input type="text" id="noteInput" class="add-note-input" placeholder="Write a note...">
+          <button id="addNoteBtn" class="add-note-btn" style="margin-top: 8px; width: 100%;">Add Note</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+
+    <div>
+      <h3>PARADOX LAB</h3>
+      <p>Unraveling mysteries through collaborative investigation</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="../index.html">Home</a><br>
+      <a href="../about.html">About</a><br>
+      <a href="../explore.html">Explore</a><br>
+    </div>
+
+    <div>
+      <h4>Connect</h4>
+      <a href="../community.html">Community</a><br>
+      <a href="../activities.html">Activities</a><br>
+      <a href="../join.html">Join Us</a><br>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Paradox Lab. All rights reserved.
+  </div>
+</footer>
+
+<script src="../cases.js"></script>
+</body>
+</html>
